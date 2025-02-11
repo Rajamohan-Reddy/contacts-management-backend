@@ -1,0 +1,38 @@
+
+
+GET http://localhost:3000/contacts
+###
+
+
+POST http://localhost:3000/contacts
+Content-Type : application/json
+
+{
+    "name" : "raghava",
+    "email" : "raghava@gmail.com",
+    "phoneNumber" : "8638345034",
+    "address" : "Hyderabad"
+}
+
+###
+
+PUT http://localhost:3000/contacts/1
+Content-Type : application/json
+
+{
+    "name" : "rajesh",
+    "email" : "rajesh@gmail.com",
+    "phoneNumber" : "1230987654",
+    "address" : "sivalayam temple"
+}
+
+###
+
+
+DELETE http://localhost:3000/contacts/2
+###
+
+GET http://localhost:3000/contacts/3
+###
+
+GET http://localhost:3000/contacts?name=rama
